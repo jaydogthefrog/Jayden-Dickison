@@ -1,0 +1,67 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+    position: fixed;
+	width: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover { 
+  background-color: #ddd;
+  color: black;
+}         
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+
+/* The animation code */
+	@keyframes example {
+  0% {background-color: red;}
+  15% {background-color: orange;}
+  30% {background-color: yellow;}
+  45% {background-color: green;}
+  60% {background-color: blue;}
+  75% {background-color: indigo;}
+  90% {background-color: violet;}
+
+}
+
+/* The element to apply the animation to */
+h1 {
+
+  background-color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+body {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}                           
+
+img {
+  display: block;	
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
